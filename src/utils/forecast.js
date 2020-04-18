@@ -12,7 +12,7 @@ const forecast=(latitude,longitude,callback)=>{
         }
         else
         {
-            callback(undefined, body.daily.data[0].summary+" It is currently " + body.currently.temperature + " degree celcius .There is " + body.currently.precipProbability + " % chance of rain ")
+            callback(undefined, body.daily.data[0].summary + " It is currently " + body.currently.temperature + " degree celcius .There is " + body.currently.precipProbability + " % chance of rain. With Temprature high of " + body.daily.data[0].temperatureHigh + "Degree Celcius and Temperature Low of " + body.daily.data[0].temperatureLow+"Degree celcius")
         }
 
     })
